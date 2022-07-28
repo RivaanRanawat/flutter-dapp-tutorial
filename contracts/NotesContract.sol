@@ -26,6 +26,5 @@ contract NotesContract {
     function deleteNote(uint256 _id) public {
         delete notes[_id];
         emit NoteDeleted(_id);
-        noteCount--;
     }
 }
